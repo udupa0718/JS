@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>JS-Basics</title>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>JS-Basics</title>
     </head>
-<body>
-  <script>
-    // 1. liternal array = single
-    
-       // 1.1 literal
+
+  <body>
+    <script>
+        // 1. Literal Array = Single
+        // 1.1 Literal
         var users = ['first', 'Second', 'three'];
-        var z = [12, 4, 5 ,6,7 ,4];
+        var z = [12, 4, 5, 6, 7, 4];
         console.log('users =', users);
 
-    // 1.2  array using Constructor
+        // 1.2  Array using Constructor
         var emp = new Array();
-           emp[0]="Raju";
-           emp[1]="John";
-           emp[2]="Mary";
+        emp[0] = "Raju";
+        emp[1] = "John";
+        emp[2] = "Mary";
         console.log('emp =', emp);
 
-    // 1.3 array using constructor parameter
+        // 1.3 Array using constructor parameter
         var colors = new Array("red", "blue", "green");
         console.log('colors =', colors);
 
-    // 2. Object array
-    const lang = [
-        {
-            id: 1,
-            name: 'Kannada'
-        },
-        {
-            id: 2,
-            name: 'Hindi'
-        },
-        {
-            id: 3,
-            name: 'English'
-        }
-    ];
-    console.log('lang =', lang);
+        // 2. Object array
+        const lang = [{
+                id: 1,
+                name: 'Kannada'
+            },
+            {
+                id: 2,
+                name: 'Hindi'
+            },
+            {
+                id: 3,
+                name: 'English'
+            }
+        ];
+        console.log('lang =', lang);
 
-    //3. json array
-    let empDetails = {
-        "firstName" : "Java",
-        "lastName"  : "Script",
-        "Pincode"  :   123455 
-    }
-  </script>
+        //3. json array
+        let empDetails = {
+            "firstName": "Java",
+            "lastName": "Script",
+            "pincode": 123455
+        }
+        console.log('empDetails =', empDetails);
+    </script>
 </body>
 </html>

@@ -39,12 +39,12 @@
  document.write(`<p>yy = ${typeof(yy)}</p>`);
  document.write(`<p>yy = ${yy}</p>`);
 
- //Array
+//Array
  var colors = ["orange", "blue", "red", "green", 100, true, 500.5]
  document.write(`<p>colors = ${typeof(colors)}</p>`);
  document.write(`<p>colors = ${colors}</p>`);
 
- //Object
+//Object
  var user = {
      // key : value, => property
      name: "ramesh",
@@ -53,17 +53,17 @@
  document.write(`<p>user = ${typeof(user)}</p>`);
  document.write(`<p>user = ${user}</p>`);
 
-  // function block = behaviours
-        // function name (params)
-        function deFaultRun() // Function Declaration
-        {
-            document.write(`<p>This is DEFAULT FUNCTION.</p>`);
-        }
-        deFaultRun(); // Function Calling
+// function block = behaviours
+  // function name (params)
+    function deFaultRun() // Function Declaration
+    {
+        document.write(`<p>This is DEFAULT FUNCTION.</p>`);
+    }
+    deFaultRun(); // Function Calling
 
-        function paramterRun(name, email){
-            document.write(`<p>This is PARAMTERIZED FUNCTION.</p>`);
-            document.write(`<p>First Parameter is : ${name}</p>`);
-            document.write(`<p>Second Parameter is : ${email}</p>`);
-        }
-        paramterRun("Javascript", "admin@javascript.com");
+     function paramterRun(name, email){
+        document.write(`<p>This is PARAMTERIZED FUNCTION.</p>`);
+        document.write(`<p>First Parameter is : ${name}</p>`);
+        document.write(`<p>Second Parameter is : ${email}</p>`);
+    }
+    paramterRun("Javascript", "admin@javascript.com");
