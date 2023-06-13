@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>JS-Basics</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Basics</title>
+</head>
+
 <body>
     <center>
         <h1>VARIABLE SCOPES</h1>
@@ -53,7 +55,7 @@
         document.write(`<p>xx = ${typeof(xx)}</p>`);
         document.write(`<p>xx = ${xx}</p>`);
 
-        var yy = 34.343;/* number,float,hexa and Exponetial => number */
+        var yy = 34.343; /* number,float,hexa and Exponetial => number */
         document.write(`<p>yy = ${typeof(yy)}</p>`);
         document.write(`<p>yy = ${yy}</p>`);
 
@@ -79,7 +81,7 @@
         }
         deFaultRun(); // Function Calling
 
-        function paramterRun(name, email){
+        function paramterRun(name, email) {
             document.write(`<p>This is PARAMTERIZED FUNCTION.</p>`);
             document.write(`<p>First Parameter is : ${name}</p>`);
             document.write(`<p>Second Parameter is : ${email}</p>`);
@@ -87,8 +89,9 @@
         paramterRun("Javascript", "admin@javascript.com");
     </script>
     <hr>
-    
+
     <!-- External Script -->
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
