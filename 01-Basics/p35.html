@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>JS-Basics</title>
+        </head>
+    <body>
+        <center>
+            <h1>Type Conversions Using Operators</h1>
+        </center>
+        <hr>
+    <script>
+         let x1 = "10"; // x is a string
+         let y1  = +x1;
+         alert(typeof(y1)); // number:output
+         alert(y1);  // 10:output
+
+         let x2 =10; // x is a number
+         let y2 = x2 + "";
+         alert(typeof(y2)); // string:output
+         alert(y2);  // 10:output
+
+         let x3 = "15"; // x is a string
+         let y3 = x3 - 0;
+         alert(typeof(y3)); // number:output
+         alert(y3);  // 15:output
+
+
+         document.write("3" - 2 +"<br>"); // 1
+         document.write("3" + 2 +"<br>"); //output is "32"(bcoz + is also concatenation operator)
+         document.write("3" + 2 +"<br>"); // 32
+         document.write("3" * 2 +"<br>"); // 6
+         document.write("3" * 2 +"<br>");  // 6
+         document.write(3 * "2" +"<br>"); // 6
+         document.write("10" / "2" +"<br>"); // 5
+    </script>
+    </body>
+</html>
