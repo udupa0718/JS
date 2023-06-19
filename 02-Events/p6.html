@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Event</title>
+    <style>
+        #txt {
+            background-color: teal;
+            color: #fff;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+
+        h4 {
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Onmousewheel() and Onscroll()</h1>
+    </center>
+
+    <h4 id="output"></h4>
+
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelHandler()">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, magni dolor. Laudantium voluptate   earum
+            consequatur quasi saepe in numquam expedita libero nobis temporibus, cum praesentium quam provident,
+            adipisci at animi?</p>
+    </div>
+
+        <script>
+            function wheelHandler() {
+                let element = document.getElementById("txt");
+
+                document.getElementById("output").innerHTML = element.scrollTop + "px"
+            }
+        </script>
+</body>
+
+</html>

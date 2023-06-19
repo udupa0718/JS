@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>JS-Event</title>
+        </head>
+    <body>
+        <center>
+            <h1>Write Some Content inside Input and then Select and Copy it.</h1>
+        </center>
+        <!--
+            Copy => ctrl+c,Paste => ctrl+v,Cut => ctrl+x
+        -->
+        <form action="">
+            <label for="">Enter Some Content</label>
+            <input type="text" name="first" id="first" onselect="sel()" oncopy="cop()">
+            <br><br>
+            <textarea name="" id="" cols="30" rows="10" onpaste="pas()" oncut="cut()"></textarea>
+        </form> 
+
+
+        <script>
+            function sel() {
+                alert("Content has Selected");
+            }
+
+            function cop() {
+                alert("Content has Copied");
+            }
+
+            function pas() {
+                alert("Content has Pasted");
+            }
+             
+            function cut() {
+                alert("Content have been Cut,ready to Paste");
+            }
+        </script>
+    </body>
+
+</html>

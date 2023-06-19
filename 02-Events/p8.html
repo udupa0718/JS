@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>JS-Event</title>
+        </head>
+    <body>
+        <center>
+            <h1>MEDIA EVENTS..!</h1>
+        </center>
+        <hr>
+
+        <h3 id="msg"></h3>
+
+        <video src="assets/media/Rolex.mp3" height="200" controls onplay="playHan()" onpause="pauseHan()" onvolumechange="volHan()" onseeking="seekHan()"></video>
+
+        <script>
+            var msg = document.getElementById("msg");
+
+            function playHan(){
+                msg.innerHTML = "Started Playing Video";
+                msg.style.color = "green";
+            }
+
+            function pauseHan(){
+                msg.innerText = "video paused";
+                msg.style.color = "crimson";
+            }
+
+            function volHan(){
+                msg.innerText = "changing volume";
+                msg.style.color = "deepskyblue";
+            }
+
+            function seekHan(){
+                msg.innerText = "video timing is changing";
+                msg.style.color = "deepink";
+            }
+        </script>
+    </body>
+</html>
