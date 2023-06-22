@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>JS-Event</title>
+        </head>
+    <body>
+        <center>
+            <h1>Play() , Pause() & Fullscreen()..!</h1>
+        </center>
+
+        <hr>
+
+        <video src="assets/media/Nature.mp4" height="400" id="videoFile"></video>
+
+        <button onclick="PlayHandler()">Play</button>
+        <button onclick="PauseHandler()">Pause</button>
+        <button onclick="Fullscreen()">Fullscreen</button>
+
+        <script>
+            function PlayHandler() {
+                document.getElementById("videoFile").play();
+            }
+            function PauseHandler() {
+                document.getElementById("videoFile").pause();
+            }
+            function Fullscreen(){
+                document.getElementById("videoFile").requestFullscreen();
+            }
+        </script>
+    </body>
+</html>

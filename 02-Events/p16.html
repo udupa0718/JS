@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>JS-Event</title>
+        </head>
+    <body>
+        <h3> focusIn and focusOut..!</h3>
+
+        <form action="" id="myForm">
+               <label for="user">Username</label>
+               <input type="text" name="user" id="user" required>
+
+               <label for="pass">Password</label>
+               <input type="password" name="pass" id="pass" required>
+        </form>
+
+        <script>
+            var form = document.getElementById('myForm');
+
+             // selector.addEventListener(eventname,handler)
+
+            form.addEventListener('focusin', function(event){
+                event.target.style.background = "#ff33ff";
+                event.target.style.borderColor = "#34ff44";
+                event.target.style.outineColor = "#000";
+            });
+
+            form.addEventListener('focusout', (event)=> {
+                event.target.style.background = "#ccc466";
+                event.target.style.borderColor = "#ff3443";
+                event.target.style.outlineColor = "#34ff44";
+            });
+
+              // document.getElementById('id').addEventListener(event,callback)
+        </script>
+    </body>
+</html>
