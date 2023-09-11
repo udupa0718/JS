@@ -18,7 +18,7 @@
                 }
             </style>
         </head>
-        <!-- Event => referred as a Parameter to the Handler Function -->
+        <!-- Event => referred as a Parameter to the handler Function -->
     <body oncontextmenu="contextHandler(event)">
         <h3>OnContextMenu()</h3>
         <div class="blk" id="blk">
@@ -28,7 +28,7 @@
         <script>
             function contextHandler(event) {
                 event.preventDefault(); /* avoid page refresh */
-                prompt("Right click has Disabled");
+                alert("Right click has Disabled");
             }
         </script>
     </body>

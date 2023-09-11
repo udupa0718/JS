@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Advanced JS</title>
+        </head>
+    <body>
+        <h1> Proxy of object read only </h1>
+    
+        <script>
+             let user = {
+                name: "Ramu",
+                age: 12,
+                isActive: true
+            };
+
+            let handler = {
+                set: function (obj, prop, value) {
+                    if(obj[prop]) {
+                        console.log('read only...');
+                    } else {
+                        console.log('property not exists...');
+                    }
+                }
+            }
+
+            const pr = new Proxy(user, handler);
+
+               pr.name = 'David';
+               pr.email = 'david@gamil.com';
+        </script>
+    </body>
+</html>

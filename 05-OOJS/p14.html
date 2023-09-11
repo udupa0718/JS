@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1> Write protect the values (defineProperty) </h1>
+    </center>
+
+    <script>
+        // use strict 
+        var user = {
+            email:"john@gmail.com"
+        };
+
+        Object.defineProperty(user, "name",{
+            value: "John",
+            writable: false // true -> writable , false -> readable (write protect) (default)
+        });
+
+        console.log('before name =', user);
+
+        user.name = "Mohan"; // re-assignment
+        user.email = "mohan12@gmail.com";
+
+        console.log('after name =', user);
+        
+        document.write(`<h1> name = ${user.name}</h1>`);
+        document.write(`<h1> email = ${user.email}</h1>`);
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>DOM</title>
+        </head>
+    <body>
+        <center>
+            <h1>DOM</h1>
+        </center>
+        <hr>
+
+        <p>This is a paragraph of Text.</p>
+        <div class="test">This is another paragraph of Text.</div>
+        <p>This is one more paragraph of Text.</p>
+
+        <script>
+            try {
+               document.write("<p> This is JS Paragraph..!</p>");
+
+               let matches = document.getElementsByTagName("p");
+               console.log(matches);
+
+               document.write("<b>matches.length :</b>" + matches.length);
+
+              /* for (let index = 0; index < array.length; index++) {
+                const element = array[index];
+                
+               }
+               for (const iterator of object) {
+
+               }*/
+               
+               for (let i in matches)
+               {
+                matches[i].style.background = "yellow";
+               }
+            } catch (error){
+                console.log(error.message)
+            }
+        </script>
+    </body>
+</html>

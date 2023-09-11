@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>ECMA</title>
+        </head> 
+    <body>
+        <h1> Default parameters in functions (to avoid Nan) </h1>
+
+        <script>
+            function sum(a,b=6) {
+                document.write(`<h1> Sum = ${ a+b } </h1>`);
+            }
+
+            sum(12,33); // 45
+            sum(22); // Nan
+        </script>
+
+        <script>
+            function mul(a,b=12,c=3) {
+                document.write(`<h1> Product = ${ a+b+c } </h1>`);
+            }
+
+            mul(10,4,5);
+            mul(10,4);
+            mul(4);
+        </script>
+    </body>
+</html>

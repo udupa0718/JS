@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Array </title>
+        </head>
+    <body>
+        <center>
+          <h1>Array Methods</h1>
+        </center>
+        <hr>
+
+        <h3> Splice (index,deletecount,data) </h3>
+
+        <script>
+          var color = ['blue','red','green','white'];
+            document.write(`<h3> ${color} </h3>`);
+
+              color.splice(2,0,"orange","pink");
+            document.write(`<h3> ${color} </h3>`);
+
+              color.splice(3,2,"gold","skyblue","slateblue");
+            document.write(`<h3> ${color} </h3>`);
+
+              color.splice(2,3);
+            document.write(`<h3> ${color} </h3>`);
+        </script>
+    </body>
+</html>

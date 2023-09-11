@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title> OOJS </title>
+        </head>
+    <body>
+        <center>
+            <h1> JAVASCRIPT OBJECT </h1>
+        </center>
+        <hr>
+
+        <ol>
+            <li>
+                Literal type (Single)
+                <ul type="square">
+                   <li>Object Literal</li>
+                   <li>Creating instance of Object directly (Using Constructor Method)</li>
+                   <li>Using an Object Constructor (Using Constructor Paramater)</li>
+                </ul>
+            </li>
+            <li>Object Array</li>
+            <li>JSON (Javscript Object Notation) Array (Response of REST[Representational State transfer]) API.</li>
+        </ol>
+
+        <hr>
+
+        <center>
+            <h1> Literal Object </h1>
+            <p> key:value => property of an Object.</p>
+        </center>
+        <p><strong> SYNTAX : </strong></p>
+        <pre>
+            let literalObjectName = {
+                "key1":"value1",
+                "key2":"value2",
+                "key3":"value3",
+                "key4":"valueN",
+            };
+
+            console.log(literalObjectName);
+            console.log(typeof(literalObjectName));
+            console.log(literalObjectName.key1);
+        </pre>
+
+        <hr>
+
+        <script>
+
+            var  x = "Hello";  /* variable */ 
+           
+            var car = {
+            // key: value => property of an object
+                'model' : 2023,
+                "color" : 'red',
+                'Brand' : 'Etios',
+                'company': 'Toyota',
+                'isRunnable': true,
+                speed: () => {
+                    return "250kms max speed";
+                }
+            };
+
+            console.log('car =', car);
+
+            document.write(`<h3> Type of car = ${typeof(car)}</h3>`);
+            document.write(`<h3> object = ${car}</h3>`); // [Object Object]
+
+            document.write(`<h3> car model = ${car.model}</h3>`);
+            document.write(`<h3> car color = ${car.color}</h3>`); // object.key
+            document.write(`<h3> car brand = ${car['Brand']}</h3>`); // object['key']
+            document.write(`<h3> car company = ${car.company}</h3>`);
+            document.write(`<h3> car isRunnable = ${car.isRunnable}</h3>`);
+            document.write(`<h3> car speed = ${car.speed()}</h3>`);
+
+       </script>
+    </body>
+</html>

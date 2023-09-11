@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Advanced JS</title>
+        </head>
+    <body>
+        <h1> Anonymous (recursive) function </h1>
+        <h3 id="clock"></h3>
+
+        <script>
+            function clock() {
+                let x = new Date().toLocaleTimeString();
+                document.getElementById("clock").innerText = x;
+            }
+
+            /* self triggering function */ 
+            (function(){
+                // function body
+                setInterval(function(){
+                    clock();
+                },1000);
+            })();
+
+            /*
+                (function(){
+                   // statements
+                })();  
+            */
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Validation </title>
+      </head>
+    <body>
+        <h1> Email Id Validation </h1>
+       
+
+        <form action="" autocomplete="off">
+            <label for="email"> Email Id </label>
+            <input type="email" name="email" id="email" onkeyup="validate()">
+            <strong id="status"></strong>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            function validate() {
+                var email = document.getElementById('email').value;
+                var status = document.getElementById('status');
+                var regex = /^\S+@\S+\.\S+$/; // Example: admin@gmail.com
+            
+            if(email === ""){
+                status.innerText = `Email field must be filled`;
+                status.style.color = "orangered";
+            }
+            else{
+                if(regex.test(email) === false) {
+                    status.innerText = `Invalid email`;
+                    status.style.color = "red";
+                }
+                else{
+                    status.innerText = `Valid email`;
+                    status.style.color = "green";
+                }
+            }
+        }
+        </script>
+    </body>
+</html>

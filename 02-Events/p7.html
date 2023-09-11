@@ -7,15 +7,19 @@
         </head>
     <body>
         <center>
-            <h1>Write Some Content inside Input and then Select and Copy it.</h1>
+            <h1>Write Some Content inside Input and Then Select ,Copy, Paste and Cut it.</h1>
         </center>
+        <hr>
+
         <!--
-            Copy => ctrl+c,Paste => ctrl+v,Cut => ctrl+x
-        -->
+            Copy => ctrl+c , Paste => ctrl+v , Cut => ctrl+x
+        --> 
+        
         <form action="">
             <label for="">Enter Some Content</label>
             <input type="text" name="first" id="first" onselect="sel()" oncopy="cop()">
             <br><br>
+
             <textarea name="" id="" cols="30" rows="10" onpaste="pas()" oncut="cut()"></textarea>
         </form> 
 
@@ -34,7 +38,7 @@
             }
              
             function cut() {
-                alert("Content have been Cut,ready to Paste");
+                alert("Content have been Cut , ready to Paste");
             }
         </script>
     </body>

@@ -12,22 +12,24 @@
          <hr>
 
          <h3 id="output"></h3>
-
-        <label for="">Choose Tech</label>
+         
+    <form action="">
+       <label for="">Choose Tech</label>
         <select name="tech" id="tech" onchange="setHandler()">
            <option value="null">Choose Technology</option>
-           <option value="html">HTML</option>
-           <option value="css">CSS</option>
+           <option value="ht">HTML</option>
+           <option value="cs">CSS</option>
            <option value="js">JavaScript</option>
-           <option value="Jquery">Jquery</option>
+           <option value="jq">Jquery</option>
+           <option>SQL</option>
         </select>
+    </form>
 
         <script>
             function setHandler() {
                 let tech = document.getElementById("tech").value;
-
-                if(tech == "null") {
-                    document.getElementById("output").innerText = ` No value selected  `;
+                if (tech == "null") {
+                    document.getElementById("output").innerText = " No value selected";
                 } else {
                     document.getElementById("output").innerText = ` You have selected ${tech}`;
                 }

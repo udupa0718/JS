@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>OOJS</title>
+        </head>
+    <body>
+        <center>
+            <h1>By Creating instance of Object directly (using new keyword) </h1>
+        </center>
+         <hr>
+  
+        <strong> SYNTAX : </strong>
+        <pre>
+            let objectName = new constructorMethod();
+        </pre>
+
+        <script>
+            let empDetails = new Object();
+            console.log(typeof empDetails);
+
+            empDetails.firstName ="Kavya";
+            empDetails.lastName ="shree";
+            empDetails.fullName = function(){return this.firstName + "" + this.lastName}
+
+            document.write(empDetails.firstName+"<br>");
+            document.write(empDetails.lastName+"<br>");
+            document.write(empDetails.fullName()+"<br>");
+        </script>
+
+        <hr>
+
+        <center>
+            <h1>By using an object constructor (using new Keyword)</h1>
+        </center>
+
+        <h3>Example-1</h3>
+        <script>
+            let empDetails1 = new Object({fname: "Sujan", lname: "Udupa", fullName : function(){return this.fname + "" + this.lname}});
+
+            document.write(typeof empDetails1 +"<br>");
+            document.write(empDetails1.fname +"<br>");
+            document.write(empDetails1.lname +"<br>");
+            document.write(empDetails1.fullName() +"<br>");
+        </script>
+        <hr>
+
+        <h3>Example-2</h3>
+        <script>
+            function studDetails(firstName, lastName) { 
+                
+                console.log(`firstName = `, firstName);
+                console.log(`lastName = `, lastName);
+
+                let fn, ln, fullName;
+
+                this.fn = firstName;
+                this.ln = lastName;
+
+                console.log(`fn = `, fn);
+                console.log(`ln = `, ln);
+
+                this.fullName = fn + "" + ln;
+
+                console.log(fullName)
+            }
+
+            let stud = new studDetails("Tejas" , "Pavan");
+              console.log(typeof stud);
+              console.log(`this.fn = `, stud.fn);
+              console.log(`this.ln = `, stud.ln);
+
+        </script>
+    </body>
+</html>

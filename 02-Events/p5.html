@@ -4,35 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>JS-Event</title>
-       <!--<style>
-        h3{
-            background-color: teal;
-            padding: 20px;
-        }
-        h3:hover{
-            background-color: aquamarine;
-        }
-       </style>--> 
     </head>
     <body>
         <center>
-            <h1>MOUSE EVENTS</h1>
+            <h1> onmousedown and onmouseup </h1>
         </center>
         <hr>
 
-        <h3 id="txt" onmousedown="Handler()" onmouseup="removeHandler()">Hover your pointer on me</h3>
+        <h3 id="txt" onmousedown="downHandler()" onmouseup="upHandler()">Mouseup and Mousedown</h3>
+        
         <script>
-            function Handler() {
-                document.getElementById("txt").style.backgroundColor = "teal";
-                document.getElementById("txt").style.Color = "#fff";
-                document.getElementById("txt").style.padding = "20px";
+            function downHandler() {
+                document.getElementById("txt").style.background = "blue";
+                document.getElementById("txt").innerHTML = "<h1> Mouse Down </h1>";
             }
             
-            function removeHandler() {
-                document.getElementById("txt").style.backgroundColor = "";
-                document.getElementById("txt").style.Color = "";
-                document.getElementById("txt").style.padding = "";
+            function upHandler() {
+                document.getElementById("txt").style.background = "gold";
+                document.getElementById("txt").innerHTML = "<h1> Mouse Up </h1>";
             }
         </script>
-        </body>
-        </html>
+    </body>
+</html>

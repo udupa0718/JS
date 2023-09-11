@@ -20,19 +20,21 @@
         </center>
         <hr>
 
-        <h3 id="txt" onmouseenter="Handler()" onmouseleave="removeHandler()">Hover your pointer on me</h3>
+        <h3 id="txt" onmouseenter="Handler()" onmouseleave="removeHandler()">Hover your Pointer on me</h3>
 
         <script>
             function Handler() {
                 document.getElementById("txt").style.backgroundColor = "teal";
-                document.getElementById("txt").style.Color = "#fff";
+                document.getElementById("txt").style.color = "#000";
                 document.getElementById("txt").style.padding = "20px";
+                document.getElementById("txt").innerText = "Mouse Pointer is Entered";
             }
             
             function removeHandler() {
-                document.getElementById("txt").style.backgroundColor = "";
-                document.getElementById("txt").style.Color = "";
-                document.getElementById("txt").style.padding = "";
+                document.getElementById("txt").style.backgroundColor = "Blue";
+                document.getElementById("txt").style.color = "green";
+                document.getElementById("txt").style.padding = "20px";
+                document.getElementById("txt").innerText = "Mouse Pointer is Moved";
             }
         </script>
     </body>

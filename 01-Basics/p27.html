@@ -13,16 +13,16 @@
             /*let always have  local(block) scope */
 
             // errors=>syntax errors (compile errors)
-             //        logical errors (run time errors)
-             // try catch block is used to handle run time errors (exception handling)
+            //        logical errors (run time errors)
+            // try catch block is used to handle run time errors (exception handling)
 
             try {
                if( x > 12) {
                 let a = 156;
-                document.write(`<h3> Local = ${a} </h3>`); //Block Scope
+                document.write(`<h3> Local = ${a} </h3>`); // Block Scope
                }
                
-               document.write(`<h3> Global = ${a} </h3>`); //Global Scope
+               document.write(`<h3> Global = ${a} </h3>`); // Global Scope
             } catch (error){
                 console.log(error);
             }

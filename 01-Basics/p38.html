@@ -9,16 +9,17 @@
         <center>
             <h1>Array as Constructor Parameter</h1>
         </center>
+        <hr>
 
     <script>
         var y = new Array("Ramesh","Manju","Naveen","Radha","Smriti");
 
         document.write(`<h3> ${ y }</h3>`);
-        document.write(`<h3> ${ y[3]}</h3>`);
+        document.write(`<h3 style='color:red'> ${ y[4]}</h3>`);
 
         var i = 0;
         while(i < y.length) {
-            document.write(`<h3>${y[i]}</h3>`);
+            document.write(`<h3 style='color:orange'>${y[i]}</h3>`);
             i++;
         };
     </script>

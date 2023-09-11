@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>OOJS</title>
+        </head>
+    <body>
+        <center>
+            <h3> Prototype Keyword -> is used to create a property to an constructor
+                externally.</h3>
+        </center>
+
+        <script>
+            function User() {
+                this.name = "Shami";
+                this.getName = function (){
+                    document.write(`<h3> My Name is ${this.name} </h3>`);
+                }
+                this.display = function() {
+
+                }
+            }
+
+            // Constructor.prototype.property = value;
+            
+            User.prototype.email = "shami@gmail.com";
+            User.prototype.getEmail = () => {
+                document.write(`<h3> My Email is = ${x.email} </h3>`);
+            };
+
+            let x = new User();
+
+            console.log('user instance =', x);
+
+            document.write(`<h3> Name = ${x.name}</h3>`);
+            document.write(`<h3> Email = ${x.email}</h3>`);
+
+            x.getName();
+            x.getEmail();
+        </script>
+    </body>
+</html>

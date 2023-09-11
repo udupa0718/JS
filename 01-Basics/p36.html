@@ -6,23 +6,24 @@
           <title>JS-Basics</title>
         </head>
     <body>
-      <h3>Arrays</h3>
+      <h3 style="color: darkcyan;"><u>Arrays..!</u></h3>
       <!--
-         Array is a group of values of similar type types
+         Array is a group of values of similar type
+         Types:
         1. Literal Type (single)
-            a.array literal
-            b.array using constructor
-            c.array as constructor parameter
+           a.array literal
+           b.array using constructor
+           c.array as constructor parameter
         2. Object Array
-        3. JSON(Javascript Object Notation) Array (Responseof REST)
-        [Representational State transfer] API
+        3. JSON(Javascript Object Notation) Array (Response of REST)
+        [Representational State transfer]API
       -->
 
       <script>
           // Array literal
-          var num = [12,2,33,44,55,66]; /* numbers */
+          var num = [12, 2, 33, 44, 55, 66]; /* numbers */
           var user = ['Ram','Venu','Sanjay','Sujan','Suma']; /* Strings*/
-          var arr = [true,124,"admin@gmail.com",123.343]; /*mix type*/
+          var arr = [true ,124 ,"admin@gmail.com" ,123.343]; /*mix type*/
 
           document.write(`<h3> ${arr[0]}</h3>`);
           document.write(`<h3> ${arr}`);
@@ -34,7 +35,7 @@
           document.write(`<h3> ${num}`);
 
         for(i=0; i<user.length; i++) {
-            document.write(`<h3 style='color:orangered;'> ${user[i]}</h3>`);
+            document.write(`<h3 style='color:green;'> ${user[i]}</h3>`);
         }
       </script>
     </body>

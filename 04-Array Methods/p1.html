@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Array</title>
+        </head>
+    <body>
+        <center>
+           <h1>Array</h1>
+           <p>Collections of Data.</p>
+        </center>
+        <hr>
+
+        <h2>By Array Literal</h2>
+        <hr>
+
+      <script>
+          let fruits = ["apple","banana","mango","orange","papaya",2000];
+          document.write(typeof(fruits)+"<br>");
+          document.write(fruits + "<br>");
+
+          document.write("<hr>");
+          document.write("Fruits length =",fruits.length + "<br>");
+          document.write("First index value =",fruits[4] + "<br>");
+          document.write("Second index value =",fruits[2] + "<br>");
+          document.write("<hr>");
+
+          for (let index= 0; index< fruits.length;index++){
+            document.write(fruits[index]+ "<br>");
+          }
+      </script>
+
+        <hr>
+
+        <center>
+          <h1>By Creating instance of Array Object directly (using new keyboard) </h1>
+        </center>
+        <hr>
+
+      <script>
+        let empName = new Array();
+        console.log(typeof(empName)+ " " + "empName");
+           
+        empName[0] = "Nandan";
+        empName[1] = "Arun";
+        empName[2] = "Yash";
+        empName[3] = "Aamir";
+        empName[4] = "Ajay";
+        empName[5] = "Varun";
+
+        for (let index= 0; index<empName.length;index++){
+          document.write(empName[index]+ "<br>");
+        }
+      </script>
+
+      <hr>
+
+      <center>
+        <h1>By Using an Array Object Constructor (Using new keyboard)</h1>
+      </center>
+      <hr>
+
+      <script>
+         let studentInfo = new Array("Ak","Pk","Khake","Soke");
+
+         for (let index= 0; index<studentInfo.length;index++){
+          document.write(studentInfo[index]+ "<br>");
+        }
+      </script>
+      
+    </body>
+</html>

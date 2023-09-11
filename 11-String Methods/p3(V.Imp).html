@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> String </title>
+        </head>
+    <body>
+         <h2> String methods </h2>
+        
+        <script>
+             var str = "hisujanudupa";
+
+             document.write(`<h3> ${str} </h3>`);
+             document.write(`<h3> slice (start-index,end-index) method </h3>`);
+             document.write(`<h3> ${str.slice(3,6)} </h3>`); // given index to given number - of 1 number
+
+             document.write(`<h3> substr (start-index,end-index) method </h3>`);
+             document.write(`<h3> ${str.substr(4,8)} </h3>`); // given index no to next given character 
+             document.write(`<h3> ${str.substr(1,5)} </h3>`);
+
+             document.write(`<hr>`);
+          
+             // 10 + 12 = 22 // number = add
+             // *10* + *12* = 1012 // string = join (concat)
+
+             document.write(`<h3> Concat </h3>`);
+             var a = "viraj";
+             var b = " kumar";
+
+             document.write(`<h3> concat = ${a.concat(b)} </h3>`);
+
+             var e = b.trim(); // trim the whitespaces
+
+             document.write(`<h3> concat with trim = ${a.concat(e)} </h3>`);
+            
+        </script>
+    </body>
+</html>

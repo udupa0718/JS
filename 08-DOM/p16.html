@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>D0M</title>
+        </head>
+    <body>
+        <center>
+            <h1>document.cookie</h1>
+        </center>
+        <hr>
+
+        <button onclick="setCookie()">Set Cookie</button>
+        <button onclick="viewCookie()">View Cookie</button>
+        <button onclick="resetCookie()">Clear Cookie</button>
+
+        <h3 id="output"></h3>
+
+        <script>
+            function setCookie(){
+                var x = "Be-Practical";
+                document.cookie = `User Id = ${x}; expires = 8 AUG 2023 12:00:00 GMT+5.30`;
+                alert("Cookie successfully set");
+                window.location.reload();
+            }
+
+            function viewCookie(){
+                if (document.cookie.length != 0){
+                    alert(document.cookie);
+                } else {
+                    alert("Cookie not available");
+                }
+            }
+
+            function resetCookie(){
+                if(document.cookie = "Be-Practical") {
+                    document.cookie = `User Id =; expires = 9 AUG 2023 15:30:00 GMT+5.30`;
+                    window.location.reload();
+                }
+            }
+        </script>
+    </body>
+</html>

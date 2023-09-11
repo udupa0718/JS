@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+
+<body>
+    <center>
+        <h1> Class ES-6 => Group of objects (State & Behaviour) </h1>
+        <p> State => Variables -> Properties </p>
+        <p> Behaviour => methods </p>
+        <p> <b> Class Syntax </b> Contains 2 Components :  Class Declarations &
+        Class Expressions.</p>
+    </center>
+    <hr>
+  
+    <script>
+        class User {
+            // built in method
+            constructor() {
+                // property => states
+                this.name = "Madhu";
+                this.email = "madhu@gmail.com";
+                document.write(`<h1> Constructor Method</h1>`);
+            }
+
+            display() {
+                // method => behaviours
+                document.write(`<h1> name = ${this.name}</h1>`);
+            }
+
+            print() {
+                document.write(`<h1> email = ${this.email}</h1>`);
+            }
+        }
+        let x = new User();
+        console.log('x = ', x);
+
+        document.write(`<h1> name : ${x.name}</h1>`);
+        document.write(`<h1> email : ${x.email}</h1>`);
+
+        document.write('<hr>');
+
+        x.display();
+        x.print();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>D0M</title>
+        </head>
+    <body>
+        <h3>documnet.hasFocus()</h3>
+        <p id="log">Awaiting focus check.</p>
+        <button onclick="handler()">Click Me</button>
+
+        <script>
+            function handler(){
+                window.open("https://flipkart.com/", "flipkart", 'width=500,height=400,left=100,right=100');
+            }
+            
+            function checkpageFocus(){
+                let body = document.querySelector('body'); // html tag, id, class
+                let log = document.getElementById('log');
+
+                if(document.hasFocus()){
+                    log.textContent = "This document has focus";
+                    body.style.background = "darkcyan";
+                    body.style.color ="#fff";
+                } else {
+                    log.textContent = "This document does not have Focus";
+                    body.style.background = "#f3f344";
+                    body.style.color ="#ccc";
+                }
+            }
+            
+            setInterval(checkpageFocus, 3000);
+        </script>
+    </body>
+</html>

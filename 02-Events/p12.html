@@ -8,13 +8,13 @@
         </head>
     <body>
         <center>
-            <h1>OnSubmit and OnReset (form events)</h1>
+            <h1> Onsubmit and Onreset (form events) </h1>
         </center>
         <hr>
 
         <h3 id="out"></h3>
 
-        <form onsubmit="subHandler(event)" onreset="resetHandler()">
+        <form action=""  method="POST"  onsubmit="subHandler(event)"  onreset="resetHandler()">
             <label for="">Username</label>
             <input type="text" name="user" id="user">
             <br><br>
@@ -39,12 +39,12 @@
             }
 
             function resetHandler() {
-                alert("On Reset Event");
+                alert("form input is cleared");
+                window.location.reload();
             }
 
             // script to hide and display password
-            document.getElementById("showPass").addEventListener('click', function()
-            {
+            document.getElementById("showPass").addEventListener('click', function() {
                 const pa = document.getElementById('pass');
                 if(pa.type === "password") {
                     pa.type = "text";
@@ -53,7 +53,7 @@
                     pa.type = "password";
                     document.getElementById("txt").innerText = "Show Password";
                 }
-            })
+            });
         </script>
     </body>
 </html>

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Advanced JS</title>
+      <style>
+        table,tr,th,td,thead {
+           border: 2px solid #000;
+           border-radius: 3px;
+           padding: 11px;
+           gap: 3px;
+         }
+        td {
+          text-align: center;
+        }
+
+        td:hover {
+          background-color: burlywood;
+          color:#fff;
+        }
+
+        h4 {
+          text-align: center;
+          margin-top: 2px;
+        }
+      </style>
+    </head>
+    <body>
+      <h4> Products Info() </h4>
+      <div class="table-container">
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Thumbnail</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Discount</th>
+              <th>Rating</th>
+              <th>Brand</th>
+            </tr>
+          </thead>
+          <tbody id="products"></tbody>
+        </table>
+      </div>
+  
+      <script>
+        fetch('https://dummyjson.com/products')
+        .then((res) => res.json())
+        .then((res) => {
+              console.log("res", res);
+              printData(res.products);
+        })
+        .catch((err) => console.log(err.message));
+  
+        let Products = document.querySelector("#products");
+  
+        function printData(data) {
+          data.forEach((item) => {
+            Products.innerHTML +=
+            `<tr>
+               <td> ${item.id}</td>
+               <td><img height='50' width='150' border-radius='100px' src =${item.thumbnail} ></td>
+               <td>${item.title}</td>
+               <td>${item.description}</td>
+               <td>${item.price}</td>
+               <td>${item.discountPercentage}</td>
+               <td>${item.rating}</td>
+               <td>${item.brand}</td>      
+            </tr>`;
+          });
+        }
+      </script>
+    </body>
+  </html>

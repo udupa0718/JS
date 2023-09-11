@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +9,9 @@
         <center>
             <h1>Play() , Pause() & Fullscreen()..!</h1>
         </center>
-
         <hr>
 
-        <video src="assets/media/Nature.mp4" height="400" id="videoFile"></video>
+        <video  id="videoFile" src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" height="300"></video>
 
         <button onclick="PlayHandler()">Play</button>
         <button onclick="PauseHandler()">Pause</button>
@@ -28,6 +26,13 @@
             }
             function Fullscreen(){
                 document.getElementById("videoFile").requestFullscreen();
+
+            // Another method to do fullScreen
+
+                /* var x = document.getElementById('videoFile');
+                 if(x.requestFullscreen) {
+                    x.requestFullscreen();
+                 } */
             }
         </script>
     </body>

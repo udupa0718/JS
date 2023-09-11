@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Advanced JS</title>
+            <style>
+                section{
+                    width: 100%;
+                    overflow-x: hidden;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+                    grid-gap: 10px;
+                }
+
+                article {
+                    background-color: crimson;
+                    padding: 5px;
+                    color: #ccc;
+                }
+
+                article h4{
+                    color: gold;
+                }
+            </style>
+        </head>
+    <body>
+        <h1> Comments() </h1>
+        <section id="block"></section>
+
+        <script>
+            /* 
+             javascript promise constructor
+                4 states
+               1. fulfilled =>
+               2. rejected =>
+               3. pending =>
+               4. settled =>
+            */ 
+           fetch(`https://jsonplaceholder.typicode.com/comments`)
+           .then(response => response.json())
+           .then(res => {
+                    console.log('res =', res);
+                    print(res);
+                })
+            .catch(err => console.log(err.message));
+
+            let blk = document.querySelector("#block");
+
+                 function print(data) {
+                    data.forEach(item => {
+                        /* create an html page */
+                        let article = document.createElement('article');
+                        let h4 = document.createElement("h4");
+                        let p = document.createElement("p");
+                        let h3 = document.createElement("h3");
+                        let h2 = document.createElement("h2");
+
+                        /* add text content */
+                        h4.textContent = item.title;
+                        p.textContent = item.body;
+                        h3.textContent = item.email;
+                        h2.textContent = item.name;
+
+
+                        /* appending the main node */
+                        article.appendChild(h4);
+                        article.appendChild(p);
+                        article.appendChild(h3);
+                        article.appendChild(h2);
+
+                        blk.appendChild(article); 
+                    });
+                }
+        </script>
+    </body>
+</html>

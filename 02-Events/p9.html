@@ -7,7 +7,7 @@
         </head>
     <body>
         <center>
-            <h1>FOCUS AND BLUR..!</h1>
+            <h1> focus and blur..!</h1>
         </center>
         <hr>
 
@@ -18,12 +18,14 @@
 
         <script>
             function focusHandler(){
-                document.getElementById("name").style.background = "orange";
+                document.getElementById("name").style.background = "violet";
             }
 
             function blurHandler(){
                 document.getElementById("name").style.background = "black";
             }
+
+            // event.preventDefault(); /* avoid to trigger the event */
         </script>
     </body>
-    </html>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>D0M</title>
+          <style>
+            .container {
+                width: 50vw;
+                margin: auto;
+                border: 1px solid #222;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 20px;
+            }
+            .container select{
+                width: 200px;
+            }
+            .container .btn{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+          </style>
+        </head>
+    <body>
+        <center>
+            <h1>document.querySelectorAll and replaceChildren </h1>
+        </center>
+        <hr>
+
+        <form>
+            <section class="container">
+                <div class="left">
+                    <select name="no" id="no" multiple="multiple" size="8">
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="skyblue">Skyblue</option>
+                        <option value="grey">Gray</option>
+                        <option value="orange">Orange</option>
+                        <option value="white">White</option>
+                        <option value="yellow">Yellow</option>
+                    </select>
+                </div>
+                <div class="btn">
+                    <button id="add">Add Selection</button>
+                    <button id="remove">Remove Selection</button>
+                </div>
+                <div class="right">
+                    <select name="yes" id="yes" size="8" multiple="multiple" ></select>
+                </div>
+            </section>
+        </form>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

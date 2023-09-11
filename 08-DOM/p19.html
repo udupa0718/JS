@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>D0M</title>
+        </head>
+    <body>
+        <center>
+            <h1>window.close() and window.open()</h1>
+        </center>
+        <hr>
+
+        <button onclick="openHandler()">Open</button>
+        <button onclick="closeHandler()">Close</button>
+
+        <script>
+            var webStats;
+
+            function openHandler() {
+                webStats = window.open('https://github.com'); // to open in new tab
+                document.write('wait for 4sec')
+            
+            setTimeout(() => {
+                webStats.close()
+            },4000);
+        }
+
+            function closeHandler() {
+                console.log('webStats =', webStats)
+                webStats.close();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Regular Expressions</title>
+        </head>
+    <body>
+        <h1> Regular Expressions with Strings </h1>
+    
+
+        <script>
+            var str = "string";
+            var res = /[i-n]+/;
+
+            // match
+            console.log('match =', str.match(res)); // in
+
+            // replace
+            console.log(`replace : ${str.replace(res, "test")}`); // strtestg
+
+            // split
+            var str1 = "stringstring";
+            console.log(`split : ${str1.split(res)}`);  // str,gstr,g
+
+            // search
+            console.log(`search : ${str1.search(res)}`); // 3 
+        </script>
+    </body>
+</html>

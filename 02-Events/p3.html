@@ -4,35 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>JS-Event</title>
-       <!--<style>
-        h3{
-            background-color: teal;
-            padding: 20px;
-        }
-        h3:hover{
-            background-color: aquamarine;
-        }
-       </style>--> 
     </head>
     <body>
         <center>
-            <h1>KEYBOARD EVENT</h1>
+            <h1>MOUSE EVENTS</h1>
         </center>
         <hr>
 
-        <h3 id="txt" onmousemove="Handler()" onmouseout="removeHandler()">Hover your pointer on me</h3>
+        <h3 id="txt" onmouseover="Handler()" onmouseout="removeHandler()">Hover your Pointer on me</h3>
+        
         <script>
             function Handler() {
-                document.getElementById("txt").style.backgroundColor = "teal";
-                document.getElementById("txt").style.Color = "#fff";
+                document.getElementById("txt").style.backgroundColor = "darkgreen";
+                document.getElementById("txt").style.color = "#000";
                 document.getElementById("txt").style.padding = "20px";
+                document.getElementById("txt").innerText = "Mouse Pointer is Entered";
             }
             
             function removeHandler() {
-                document.getElementById("txt").style.backgroundColor = "";
-                document.getElementById("txt").style.Color = "";
-                document.getElementById("txt").style.padding = "";
+                document.getElementById("txt").style.backgroundColor = "#222";
+                document.getElementById("txt").style.color = "gold";
+                document.getElementById("txt").style.padding = "20px";
+                document.getElementById("txt").innerText = "Mouse Pointer Moved Out";
             }
         </script>
-        </body>
-        </html>
+    </body>
+</html>
